@@ -1,0 +1,30 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials__link {
+  @include flex-centered();
+  width: 44px;
+  height: 44px;
+
+  color: var(--icon-color);
+  border-radius: 44px;
+  cursor: pointer;
+
+  transition: background-color var(--transition-duration-func),
+    color var(--transition-duration-func);
+
+  &:hover,
+  &:focus {
+    background-color: var(--active-color);
+    color: var(--background);
+  }
+
+  &_bright {
+    color: var(--background);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-duration-func);
+  }
+}

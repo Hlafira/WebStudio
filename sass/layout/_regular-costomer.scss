@@ -1,0 +1,21 @@
+.regular-costomer {
+  @include flex-centered();
+
+  // min-width: 170px;
+  min-height: 92px;
+  width: 100%;
+
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  transition: color var(--transition-duration-func),
+    border-color var(--transition-duration-func);
+
+  &:hover {
+    border-color: var(--active-color);
+  }
+
+  @media screen and (max-width: 760px) {
+    // min-width: 210px;
+  }
+}

@@ -1,0 +1,51 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 94px 15px;
+  overflow-y: scroll;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--transition-duration-func),
+    visibility var(--transition-duration-func);
+
+  &__modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 450px;
+    width: calc(100% - 30px);
+    height: 609px;
+    padding: 40px;
+
+    background-color: var(--background);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transition: transform var(--transition-duration-func);
+    transform: translate(-50%, -50%) scale(1);
+
+    @media screen and (min-width: $tablet) {
+      transform: translate(-50%, -50%) scale(1);
+      max-width: 450px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      max-width: 528px;
+      height: 581px;
+    }
+  }
+
+  &__btn-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+
+  &.is-hidden &__modal {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}

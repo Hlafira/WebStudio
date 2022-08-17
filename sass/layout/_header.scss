@@ -1,0 +1,55 @@
+.header {
+  border: 1px solid rgba(236, 236, 236, 1);
+  position: relative;
+
+  &__container {
+    display: flex;
+  }
+
+  &__logo {
+    margin-right: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    &__logo {
+      margin-right: 88px;
+    }
+  }
+
+  @media screen and (min-width: $desctop) {
+    &__logo {
+      margin-right: 93px;
+    }
+  }
+}
+
+.header__btn {
+  // z-index: 901;
+
+  margin-right: 10px;
+  margin-top: 10px;
+
+  width: 40px;
+  height: 40px;
+  transition: opacity var(--transition-duration-func),
+    visibility var(--transition-duration-func);
+
+  & .icon_cross {
+    display: none;
+  }
+
+  &.is-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    & .icon_menu {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}

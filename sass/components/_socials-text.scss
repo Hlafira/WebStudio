@@ -1,0 +1,29 @@
+.socials-text {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include font(18px, 500, 22px);
+
+  &__link {
+    color: var(--active-color);
+  }
+}
+
+.socials-text__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &:not(:last-child):after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+}

@@ -1,0 +1,53 @@
+.field-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  @media screen and (min-width: $mobile) {
+    align-items: center;
+  }
+
+  cursor: pointer;
+
+  &__label {
+    margin-left: 5px;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 1.715;
+    color: var(--text-color);
+    cursor: pointer;
+
+    @media screen and (min-width: $desctop) {
+      font-size: 14px;
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: var(--active-color);
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    @extend .visually-hidden;
+  }
+
+  &__box {
+    display: block;
+    height: 15px;
+    width: 16px;
+    min-width: 15px;
+    background-origin: border-box;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    transition: background-color var(--transition-duration-func),
+      background-image 250ms var(--transition-duration-func);
+  }
+
+  &__checkbox:checked + &__box {
+    border: 2px solid var(--active-color);
+    background: var(--active-color) url("../images/elements/icon-check.svg") center
+      center no-repeat;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,25 @@
+.link {
+  transition: color var(--transition-duration-func);
+  cursor: pointer;
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--active-color);
+  }
+}
+
+.link_text-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.link_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,41 @@
+.card-set {
+  list-style: none;
+  display: flex;
+  gap: var(--card-gap);
+
+  &__item {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  &__item_cols_3 {
+    //flex-basis: calc((100% - 2 * #{--card-gap}) / 3);
+    @include colmns-media($tablet, 2);
+    @include colmns-media($desctop, 3);
+  }
+
+  // &__item--4 {
+  //   flex-basis: calc((100% - 3 * #{--card-gap}) / 4);
+  // }
+  flex-wrap: wrap;
+
+  &__item_cols_4 {
+    @include colmns-media($tablet, 2);
+    @include colmns-media($desctop, 4);
+    // @media screen and (min-width: --tablet) {
+    //   flex-basis: calc((100% - 1 * #{--card-gap}) / 2);
+    // }
+
+    // @media screen and (min-width: --tablet) {
+    //   flex-basis: calc((100% - 3 * #{--card-gap}) / 4);
+    // }
+  }
+
+  &__item_cols_6 {
+    @include col-width(2);
+    @include colmns-media($tablet, 3);
+    @include colmns-media($desctop, 6);
+  }
+}

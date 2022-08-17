@@ -1,0 +1,10 @@
+.projects {
+  @extend .section;
+  &__filter {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 40px;
+    }
+  }
+}

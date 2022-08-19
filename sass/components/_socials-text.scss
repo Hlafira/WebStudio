@@ -26,4 +26,14 @@
     width: 1px;
     background-color: rgba(33, 33, 33, 0.2);
   }
+  @media screen and (max-width: $xs-mobile) {
+    flex-basis: calc(50% - 20px);
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(2):after {
+      display: none;
+    }
+  }
 }

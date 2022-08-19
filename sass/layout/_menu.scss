@@ -2,12 +2,13 @@
   display: flex;
   background-color: var(--background);
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
     position: fixed;
     top: 0;
     left: -100vw;
     right: 0;
+    overflow: scroll;
 
     // min-height: 796px;
     height: 100vh;
@@ -44,7 +45,7 @@
     // min-height: 0;
     width: 100%;
     display: flex;
-
+    left: 0;
     &__nav {
       margin-right: auto;
     }

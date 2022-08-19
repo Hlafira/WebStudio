@@ -21,6 +21,12 @@
     }
   }
 
+  @media screen and (max-width: 375px) {
+    &__link_phone {
+      @include font($fz: 30px, $fw: 500, $lh: 30px);
+    }
+  }
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;

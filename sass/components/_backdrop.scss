@@ -17,7 +17,7 @@
     left: 50%;
     max-width: 450px;
     width: calc(100% - 30px);
-    height: 609px;
+    // height: 609px;
     padding: 40px;
 
     background-color: var(--background);
@@ -36,6 +36,15 @@
     @media screen and (min-width: $desctop) {
       max-width: 528px;
       height: 581px;
+    }
+
+    @media screen and(max-width:$xs-mobile) {
+      padding: 40px 20px 15px;
+    }
+
+    @media screen and(max-height:570px) {
+      top: 20px;
+      transform: translate(-50%, 0) scale(1);
     }
   }
 

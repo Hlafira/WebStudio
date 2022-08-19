@@ -24,4 +24,18 @@
   &__button {
     padding: 10px 55px;
   }
+
+  @media screen and (max-width: $xs-mobile) {
+    &__title {
+      font-size: 17px;
+    }
+
+    &__button {
+      padding: 5px 30px;
+    }
+
+    &__field-text_textarea {
+      height: 80px;
+    }
+  }
 }

@@ -7,6 +7,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     @include font($fz: 40px, $lh: 47px, $fw: 500);
+    color: var(--title-color);
   }
 
   &__link_active {
@@ -39,14 +40,15 @@
     }
 
     &__link {
+      color: var(--title-color);
       display: flex;
+
       align-items: center;
       height: 100%;
 
       font-weight: 500;
       line-height: 1.14;
       letter-spacing: 0.02em;
-      color: var(--title-color);
     }
   }
 

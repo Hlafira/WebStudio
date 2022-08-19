@@ -60,9 +60,9 @@
     &__container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      padding-left: 76px;
-      padding-right: 76px;
+      justify-content: space-around;
+      // padding-left: 76px;
+      // padding-right: 76px;
     }
     &__subscribe {
       min-width: 450px;

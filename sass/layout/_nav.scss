@@ -13,6 +13,12 @@
   &__link_active {
     color: var(--active-color);
   }
+
+  @media screen and (max-width: 767px) {
+    &__link_active:hover {
+      border-bottom: 4px solid var(--active-color);
+    }
+  }
 }
 
 @media screen and (min-width: $tablet) {

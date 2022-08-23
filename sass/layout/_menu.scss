@@ -14,7 +14,7 @@
     height: 100vh;
     width: 100vw;
 
-    padding: 48px 10px 48px 40px;
+    // padding: 48px 10px 48px 40px;
 
     opacity: 0;
     visibility: hidden;
@@ -39,13 +39,29 @@
       visibility: visible;
       pointer-events: initial;
     }
+
+    &__container {
+      width: 100%;
+      @media screen and (min-width: 480px) {
+        width: 480px;
+      }
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      padding: 48px 10px 48px 40px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
-    // min-height: 0;
     width: 100%;
-    display: flex;
-    left: 0;
+    &__container {
+      // min-height: 0;
+      display: flex;
+      left: 0;
+      width: 100%;
+    }
     &__nav {
       margin-right: auto;
     }
@@ -65,7 +81,7 @@
   @media screen and (max-width: $tablet) {
     position: absolute;
 
-    right: 10px;
+    right: 15px;
     top: 10px;
 
     width: 40px;

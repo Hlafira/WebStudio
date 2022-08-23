@@ -65,73 +65,81 @@
           </svg>
         </button>
         <div class="menu" id="menu-container" data-menu>
-          <button
-            type="button"
-            class="menu__btn btn"
-            data-menu-close
-            aria-label="Переключатель мобильного меню"
-            aria-expanded="false"
-            aria-controls="menu-container"
-          >
-            <svg class="btn__icon" width="24" height="24">
-              <use
-                href="./images/icons.svg#close_24px"
-                class="icon_cross"
-              ></use>
-            </svg>
-          </button>
-          <nav class="nav menu__nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link nav__link_active link" href="./index.html"
-                  >Студия</a
+          <div class="menu__container">
+            <button
+              type="button"
+              class="menu__btn btn"
+              data-menu-close
+              aria-label="Переключатель мобильного меню"
+              aria-expanded="false"
+              aria-controls="menu-container"
+            >
+              <svg class="btn__icon" width="24" height="24">
+                <use
+                  href="./images/icons.svg#close_24px"
+                  class="icon_cross"
+                ></use>
+              </svg>
+            </button>
+            <nav class="nav menu__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link nav__link_active link" href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link link" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="menu__contacts contacts">
+              <li class="contacts__item">
+                <a
+                  class="contacts__link link link_text-icon contacts__link_phone"
+                  href="tel:+380961111111"
+                  ><svg
+                    class="link__icon contacts__icon"
+                    width="10"
+                    height="16"
+                  >
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
                 >
               </li>
-              <li class="nav__item">
-                <a class="nav__link link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link link" href="">Контакты</a>
+              <li class="contacts__item">
+                <a
+                  class="contacts__link link link_text-icon contacts__link_mail"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="link__icon contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
               </li>
             </ul>
-          </nav>
-          <ul class="menu__contacts contacts">
-            <li class="contacts__item">
-              <a
-                class="contacts__link link link_text-icon contacts__link_phone"
-                href="tel:+380961111111"
-                ><svg class="link__icon contacts__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-            <li class="contacts__item">
-              <a
-                class="contacts__link link link_text-icon contacts__link_mail"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="link__icon contacts__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="menu__socials-text socials-text">
-            <li class="socials-text__item">
-              <a href="#" class="socials-text__link link">Instagram</a>
-            </li>
-            <li class="socials-text__item">
-              <a href="#" class="socials-text__link link">Twitter</a>
-            </li>
-            <li class="socials-text__item">
-              <a href="#" class="socials-text__link link">Facebook</a>
-            </li>
-            <li class="socials-text__item">
-              <a href="#" class="socials-text__link link">LinkedIn</a>
-            </li>
-          </ul>
+            <ul class="menu__socials-text socials-text">
+              <li class="socials-text__item">
+                <a href="#" class="socials-text__link link">Instagram</a>
+              </li>
+              <li class="socials-text__item">
+                <a href="#" class="socials-text__link link">Twitter</a>
+              </li>
+              <li class="socials-text__item">
+                <a href="#" class="socials-text__link link">Facebook</a>
+              </li>
+              <li class="socials-text__item">
+                <a href="#" class="socials-text__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -156,7 +164,7 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="visually-hidden">Приемущества</h2>
+          <h2 class="visually-hidden">Преимущества</h2>
           <ul class="card-set">
             <li class="card-set__item card-set__item_cols_4">
               <div class="advantage">
@@ -228,8 +236,8 @@
                 <div class="responsibility__thumb thumb">
                   <img
                     srcset="
-                      ./images/desctop/index/responsibilities/box1_1x-min.jpg 1x,
-                      ./images/desctop/index/responsibilities/box1_2x-min.jpg 2x
+                      ./images/desktop/index/responsibilities/box1_1x-min.jpg 1x,
+                      ./images/desktop/index/responsibilities/box1_2x-min.jpg 2x
                     "
                     src="./images/desctop/index/responsibilities/box1_1x-min.jpg"
                     alt="Разработка алгоритма"
@@ -246,11 +254,11 @@
                 <div class="responsibility__thumb thumb">
                   <img
                     srcset="
-                      ./images/desctop/index/responsibilities/box2_1x-min.jpg 1x,
-                      ./images/desctop/index/responsibilities/box2_2x-min.jpg 2x
+                      ./images/desktop/index/responsibilities/box2_1x-min.jpg 1x,
+                      ./images/desktop/index/responsibilities/box2_2x-min.jpg 2x
                     "
                     src="./images/desctop/index/responsibilities/box2_1x-min.jpg"
-                    alt="Проэктирование удобного адаптивного интерфеса"
+                    alt="Проектирование удобного адаптивного интерфейса"
                     width="370"
                   />
                   <p class="responsibility__description">
@@ -264,10 +272,10 @@
                 <div class="responsibility__thumb thumb">
                   <img
                     srcset="
-                      ./images/desctop/index/responsibilities/box3_1x-min.jpg 1x,
-                      ./images/desctop/index/responsibilities/box3_2x-min.jpg 2x
+                      ./images/desktop/index/responsibilities/box3_1x-min.jpg 1x,
+                      ./images/desktop/index/responsibilities/box3_2x-min.jpg 2x
                     "
-                    src="./images/desctop/index/responsibilities/box3_1x-min.jpg"
+                    src="./images/desktop/index/responsibilities/box3_1x-min.jpg"
                     alt="Разработка красивого дизайна"
                     width="370"
                   />
@@ -300,8 +308,8 @@
                     />
                     <source
                       srcset="
-                        ./images/desctop/index/team/photo1_1x-min.jpg 1x,
-                        ./images/desctop/index/team/photo1_2x-min.jpg 2x
+                        ./images/desktop/index/team/photo1_1x-min.jpg 1x,
+                        ./images/desktop/index/team/photo1_2x-min.jpg 2x
                       "
                       media="(min-width: 1200px)"
                     />
@@ -368,8 +376,8 @@
                     />
                     <source
                       srcset="
-                        ./images/desctop/index/team/photo2_1x-min.jpg 1x,
-                        ./images/desctop/index/team/photo2_2x-min.jpg 2x
+                        ./images/desktop/index/team/photo2_1x-min.jpg 1x,
+                        ./images/desktop/index/team/photo2_2x-min.jpg 2x
                       "
                       media="(min-width: 1200px)"
                     />
@@ -436,8 +444,8 @@
                     />
                     <source
                       srcset="
-                        ./images/desctop/index/team/photo3_1x-min.jpg 1x,
-                        ./images/desctop/index/team/photo3_2x-min.jpg 2x
+                        ./images/desktop/index/team/photo3_1x-min.jpg 1x,
+                        ./images/desktop/index/team/photo3_2x-min.jpg 2x
                       "
                       media="(min-width: 1200px)"
                     />
@@ -504,8 +512,8 @@
                     />
                     <source
                       srcset="
-                        ./images/desctop/index/team/photo4_1x-min.jpg 1x,
-                        ./images/desctop/index/team/photo4_2x-min.jpg 2x
+                        ./images/desktop/index/team/photo4_1x-min.jpg 1x,
+                        ./images/desktop/index/team/photo4_2x-min.jpg 2x
                       "
                       media="(min-width: 1200px)"
                     />
@@ -517,7 +525,7 @@
                       media="(min-width: 768px)"
                     />
                     <img
-                      src="./images/desctop/index/team/photo4_1x-min.jpg"
+                      src="./images/desktop/index/team/photo4_1x-min.jpg"
                       alt="Фото Михаила Ермакова"
                     />
                   </picture>
@@ -748,7 +756,9 @@
             </svg>
           </label>
 
-          <label class="callback__field-text field-text callback__field-text_textarea">
+          <label
+            class="callback__field-text field-text callback__field-text_textarea"
+          >
             <span class="field-text__label">Комментарий</span>
             <textarea
               name="comment"

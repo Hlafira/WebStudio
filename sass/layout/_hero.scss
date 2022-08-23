@@ -52,7 +52,7 @@
     }
   }
 
-  // desctop
+  // desktop
 
   @media screen and (min-width: 984px) {
     background-image: linear-gradient(
@@ -77,7 +77,7 @@
   background-size: cover;
   background-position: center;
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -96,7 +96,7 @@
     text-transform: uppercase;
     color: var(--text-primary-color);
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: $desktop) {
       max-width: 690px;
       @include font-size($fz: 44px, $lh: 60px);
     }

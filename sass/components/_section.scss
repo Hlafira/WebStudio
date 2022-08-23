@@ -19,7 +19,7 @@
     background-color: var(--secondary-color);
   }
 
-  @media screen and (max-width: ( $desctop - 1px)) {
+  @media screen and (max-width: ( $desktop - 1px)) {
     &_hide_tablet {
       display: none;
     }

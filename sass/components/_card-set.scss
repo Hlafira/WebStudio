@@ -13,7 +13,7 @@
   &__item_cols_3 {
     //flex-basis: calc((100% - 2 * #{--card-gap}) / 3);
     @include colmns-media($tablet, 2);
-    @include colmns-media($desctop, 3);
+    @include colmns-media($desktop, 3);
   }
 
   // &__item--4 {
@@ -23,7 +23,7 @@
 
   &__item_cols_4 {
     @include colmns-media($tablet, 2);
-    @include colmns-media($desctop, 4);
+    @include colmns-media($desktop, 4);
     // @media screen and (min-width: --tablet) {
     //   flex-basis: calc((100% - 1 * #{--card-gap}) / 2);
     // }
@@ -36,6 +36,6 @@
   &__item_cols_6 {
     @include col-width(2);
     @include colmns-media($tablet, 3);
-    @include colmns-media($desctop, 6);
+    @include colmns-media($desktop, 6);
   }
 }
